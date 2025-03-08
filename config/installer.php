@@ -106,7 +106,7 @@ return [
                 'option' => ['mysql', 'sqlite', 'pgsql', 'sqlsrv'],
             ],
             'DB_HOST' => [
-                'rule' => 'required|string|max:50',
+                'rule' => 'required|string',
                 'label' => 'Database Host',
                 'type' => 'text',
                 'placeholder' => 'e.g: 127.0.0.1',
