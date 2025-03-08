@@ -10,6 +10,8 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
+    "ext-bcmath": "*",
+    "ext-gmp": "*",
     "arafat69/laravel-repository": "^1.1",
     "endroid/qr-code": "^5.0",
     "google/apiclient": "^2.17",
@@ -35,9 +37,7 @@
     "telesign/telesign": "^3.0",
     "twilio/sdk": "^8.2",
     "vonage/client": "^4.0",
-    "yabacon/paystack-php": "^2.2",
-    "ext-gmp": "*",
-    "ext-bcmath": "*"
+    "yabacon/paystack-php": "^2.2"
   },
   "require-dev": {
     "fakerphp/faker": "^1.23",
