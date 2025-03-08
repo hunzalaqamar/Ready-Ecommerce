@@ -1,0 +1,1 @@
+import{c as e,o,t as a}from"./app-5e4c1E4T.js";const s={class:"py-3 px-2 text-slate-800 text-lg md:text-2xl font-medium font-['Roboto'] tracking-tight md:leading-loose bg-white"},c={__name:"AuthPageHeader",props:{title:String},setup(t){return(i,n)=>(o(),e("div",s,a(t.title),1))}};export{c as _};
