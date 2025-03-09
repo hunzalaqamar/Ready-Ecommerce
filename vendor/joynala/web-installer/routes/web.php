@@ -11,6 +11,14 @@ use Abedin\WebInstaller\Controllers\UpdateController;
 Route::controller(WelcomeController::class)->group(function(){
     Route::get('/install', 'index')->name('installer.welcome.index');
     Route::get('/install/publish-config', 'publishConfig')->name('installer.publish-config');
+    Route::get('/db-test', function () {
+        try {
+            \Illuminate\Support\Facades\DB::connection()->getPdo();
+            return "Database connection successful!";
+        } catch (\Exception $e) {
+            return "Database connection failed: " . $e->getMessage();
+        }
+    });
 });
 
 Route::group(['prefix' => 'install', 'as' => 'installer.', 'middleware' => ['web', 'config_check']], function (){

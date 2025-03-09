@@ -24,15 +24,6 @@ class RouteServiceProvider extends ServiceProvider
             Route::get('/', function(){
                 return redirect()->route('installer.welcome.index');
             });
-
-            Route::get('/db-test', function () {
-                try {
-                    \Illuminate\Support\Facades\DB::connection()->getPdo();
-                    return "Database connection successful!";
-                } catch (\Exception $e) {
-                    return "Database connection failed: " . $e->getMessage();
-                }
-            });
        });
     }
 }
